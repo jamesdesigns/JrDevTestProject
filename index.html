@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Clearlink Test Project - with James Hooper</title>
+        <meta name="description" content="HTML,CSS,Javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="intro">
+            <h1>James Hooper</h1>
+            <p class="myIntro">
+                Hi, my name is James Hooper. After earning a 
+                Bachelors Degree in Graphic Design from the University of Utah, I 
+                discovered over time that I really wanted to learn everything about designing, 
+                building, and creating websites. Now that I am graduating with a Bachelors degree
+                in Web Design and Development, I am ready to begin my journey in building
+                powerful and engaging websites.</p>
+        </header>
+        <section class="answers">
+            <div class="nervous">
+                <div class="card">
+                    <img class="icon" src="images/no-wifi.png" alt="No WiFi" />
+                    <h2>What makes me nervous as a Web Developer?</h2>
+                    <p class="response">When WiFi is no where to be found.</p>
+                </div>
+            </div>
+            <div class="moment">
+                <div class="card">
+                    <img class="icon" src="images/graphql-logo.png" alt="GraphQL" />
+                    <h2>What has been my greatest moment as a developer?</h2>
+                    <p class="response">The first time I built a working GraphQL server.</p>
+                </div>
+            </div>
+            <div class="favorite">
+                <div class="card">
+                    <img class="icon" src="images/ITunes_12.2_logo.png" alt="Music" />
+                    <h2>What is my favorite thing about pop culture?</h2>
+                    <p class="response">Headphones and the endless supply of streaming music.</p>
+                </div>
+            </div>
+        </section>
+        <section class="inputQuestions">
+            <h2 class="math">Let's Build a Multiplication Table!</h2>
+            <label class="label" for="rows">Enter Rows:</label>
+            <input type="text" id="rows" placeholder="">
+            <label class="label" for="columns">Enter Columns:</label>
+            <input type="text" id="columns" placeholder="">  
+            <div id="alert"></div>  
+        </section>
+       
+        <section class="table">
+            <table id="newTable"></table>
+            <button type="button" onclick="createTable()">Create Table</button>
+            <button type="reset" onclick="resetTable()">Reset</button>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
